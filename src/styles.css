@@ -1,24 +1,30 @@
 body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background: #f4f4f9;
+  color: #333;
 }
 
 .cv-container {
-  max-width: 900px;
+  display: flex;
+  max-width: 1200px;
   margin: 20px auto;
   background: #fff;
-  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-header {
+.sidebar {
+  background: #2d89ef;
+  color: #fff;
+  padding: 20px;
+  width: 30%;
+}
+
+.sidebar .profile {
   text-align: center;
-  border-bottom: 2px solid #eaeaea;
-  padding-bottom: 20px;
 }
 
 .profile-pic {
@@ -26,50 +32,71 @@ header {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
+  border: 4px solid #fff;
   margin-bottom: 10px;
 }
 
-h1 {
-  font-size: 28px;
-  color: #333;
+.sidebar h1 {
+  font-size: 22px;
+  margin: 10px 0 5px;
 }
 
-h3 {
+.sidebar h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px 0 20px;
+}
+
+.sidebar h2 {
   font-size: 18px;
-  color: #777;
-  margin: 5px 0 10px;
-}
-
-main {
-  margin-top: 20px;
-}
-
-section {
-  margin-bottom: 20px;
-}
-
-h2 {
-  color: #333;
-  font-size: 20px;
   margin-bottom: 10px;
-  border-bottom: 2px solid #eaeaea;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 5px;
 }
 
-.item {
-  margin-bottom: 10px;
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-ul {
-  list-style-type: square;
-  padding-left: 20px;
+.sidebar ul li {
+  margin: 8px 0;
 }
 
-a {
-  color: #3498db;
+.sidebar a {
+  color: #fff;
   text-decoration: none;
 }
 
-a:hover {
+.sidebar a:hover {
   text-decoration: underline;
+}
+
+.main-content {
+  padding: 20px;
+  width: 70%;
+}
+
+.main-content h2 {
+  font-size: 24px;
+  color: #2d89ef;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f4f4f9;
+  padding-bottom: 5px;
+}
+
+.main-content p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.main-content .item {
+  margin-bottom: 20px;
+}
+
+.main-content h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #444;
 }
